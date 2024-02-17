@@ -19,13 +19,13 @@ public class Plant {
         this.watering = watering;
         this.frequencyOfWatering = frequencyOfWatering;
     }
-    public Plant(String name, String notes, LocalDate watering, int frequencyOfWatering) {
+
+        public Plant(String name, String notes, LocalDate watering) {
         this.name = name;
         this.notes = "   ";
         this.watering = LocalDate.now();
-        this.frequencyOfWatering = frequencyOfWatering;
     }
-    public Plant(String name, LocalDate planted, LocalDate watering, int frequencyOfWatering) {
+    public Plant(String name,LocalDate planted, LocalDate watering, int frequencyOfWatering) {
         this.name = name;
         this.planted = LocalDate.now();
         this.watering = LocalDate.now();
@@ -72,12 +72,15 @@ public class Plant {
         this.frequencyOfWatering = frequencyOfWatering;
     }
 
-    public LocalDate getWateringInfo(LocalDate watering,int frequencyOfWatering){
-        LocalDate getWatering = ChronoUnit.DAYS.addTo(watering,frequencyOfWatering);
-        return getWatering;
+    public LocalDate getWatering(LocalDate watering,int frequencyOfWatering){
+        LocalDate wateringDate = ChronoUnit.DAYS.addTo(watering,frequencyOfWatering);
+        return wateringDate;
     }
 
-
-
-
+    @Override
+    public String toString() {
+        return
+                "name='" + name + '\'' +
+                               ", watering=" + watering +", other watering="+getWatering()                ;
+    }
 }
