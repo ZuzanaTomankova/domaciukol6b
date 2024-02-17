@@ -49,6 +49,7 @@ public class ListOfPlants {
                 LocalDate planted = LocalDate.parse(parts[2]);
                 LocalDate watering = LocalDate.parse(parts[3]);
                 int frequencyOfWatering = Integer.parseInt(parts[4]);
+                Plant plant = new Plant(name,description,planted,watering,frequencyOfWatering);
                 plants.add(plant);
                             }
         } catch (FileNotFoundException e) {
