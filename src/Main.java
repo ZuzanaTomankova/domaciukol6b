@@ -11,10 +11,16 @@ public class Main {
     public static void main(String[] args) {
 
         ListOfPlants listOfPlants = new ListOfPlants();
-        listOfPlants.addPlant(new Plant("Fialka","málo se zalévá",LocalDate.of(2022,2,3),LocalDate.of(2024,1,2),7));
-
 
         getWateringInfo(listOfPlants);
+
+        String fileName="resources/kvetiny.txt";
+        listOfPlants.loadContentFromFile(fileName);
+
+
+        String fileName1 = "resources/kvetiny1.txt";
+        listOfPlants.saveContentToFile(fileName1);
+
     }
 
     private static void getWateringInfo(ListOfPlants listOfPlants) {
