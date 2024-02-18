@@ -13,6 +13,7 @@ public class Main {
     public static void main(String[] args) {
 
         ListOfPlants listOfPlants = new ListOfPlants();
+        listOfPlants.addPlant(new Plant("Fialka fialová","málo se zalévá",LocalDate.of(2022,1,2),LocalDate.of(2024,2,15),7));
 
         getWateringInfo(listOfPlants);
 
@@ -21,8 +22,15 @@ public class Main {
 
 
         String fileName1 = "resources/kvetiny1.txt";
-        listOfPlants.saveContentToFile(fileName1);
+       listOfPlants.saveContentToFile(fileName1);
 
+        List<Plant> plantList = listOfPlants.getOtherPlant();
+        Collections.sort(plantList,Comparator.comparing(Plant::getName));
+        System.out.println(plantList);
+
+        Collections.sort(plantList,Comparator.comparing(Plant::getWatering));
+
+        System.out.println(plantList);
 
 
     }
