@@ -21,12 +21,13 @@ public class Plant {
         this.frequencyOfWatering = frequencyOfWatering;
     }
 
-        public Plant(String name, String notes, LocalDate watering) {
+    public Plant(String name, String notes, LocalDate watering) {
         this.name = name;
         this.notes = "   ";
         this.watering = LocalDate.now();
     }
-    public Plant(String name,LocalDate planted, LocalDate watering, int frequencyOfWatering) {
+
+    public Plant(String name, LocalDate planted, LocalDate watering, int frequencyOfWatering) {
         this.name = name;
         this.planted = LocalDate.now();
         this.watering = LocalDate.now();
@@ -61,7 +62,11 @@ public class Plant {
         return watering;
     }
 
-    public void setWatering(LocalDate watering) {
+    public void setWatering(LocalDate watering) throws PlantException{
+
+        if (watering.isBefore(planted)) {
+            throw new IllegalArgumentException("Watering must be after planting. Given watering: " + watering + " Given planting: " + planted);
+        }
         this.watering = watering;
     }
 
@@ -69,22 +74,31 @@ public class Plant {
         return frequencyOfWatering;
     }
 
-    public void setFrequencyOfWatering(int frequencyOfWatering) {
-        this.frequencyOfWatering = frequencyOfWatering;
+    public void setFrequencyOfWatering
+            (int frequencyOfWatering) throws PlantException
+            {
+        if (frequencyOfWatering <= 0) {
+            throw new IllegalArgumentException("Frequency of watering must be greater than zero.Given frequency: "
+                    + frequencyOfWatering);
+
+
+
+            }
+                this.frequencyOfWatering = frequencyOfWatering;
+        }
+
+
+
+        public LocalDate getNextWatering(LocalDate watering,int frequencyOfWatering){
+            LocalDate wateringDate = ChronoUnit.DAYS.addTo(watering, frequencyOfWatering);
+            {return wateringDate;}
+
+        }
+
+        @Override
+        public String toString () {
+            return
+                    "name='" + name + '\'' +
+                            ", watering=" + watering + ", other watering=" + getNextWatering(watering, frequencyOfWatering);
+        }
     }
-
-    public LocalDate getWatering(LocalDate watering,int frequencyOfWatering){
-        LocalDate wateringDate = ChronoUnit.DAYS.addTo(watering,frequencyOfWatering);
-        return wateringDate;
-
-
-
-    }
-
-    @Override
-    public String toString() {
-        return
-                "name='" + name + '\'' +
-                               ", watering=" + watering +", other watering="+getWatering()                ;
-    }
-}
