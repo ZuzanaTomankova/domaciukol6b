@@ -3,6 +3,8 @@ import com.engeto.ja.Plant;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import static java.time.LocalDate.*;
@@ -20,6 +22,8 @@ public class Main {
 
         String fileName1 = "resources/kvetiny1.txt";
         listOfPlants.saveContentToFile(fileName1);
+
+
 
     }
 

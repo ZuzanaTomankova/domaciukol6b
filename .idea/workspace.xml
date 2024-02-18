@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b09f8589-6cf9-4831-aedf-7bbdcea162ce" name="Changes" comment="metoda čtení ze souboru">
+    <list default="true" id="b09f8589-6cf9-4831-aedf-7bbdcea162ce" name="Changes" comment="volání metody saveContentToFile">
+      <change afterPath="$PROJECT_DIR$/resources/kvetiny1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/kvetiny.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/kvetiny.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/ja/ListOfPlants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/ja/ListOfPlants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/ja/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/ja/Plant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +18,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="14243feaba0a8ea3efaf9bfbcbd369584e4b9a9c" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -24,15 +35,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/home/IdeaProjects/kod-z-hodin-2024-01b/l04-git-razeni"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\home\IdeaProjects\domaciukol6\resources" />
@@ -48,6 +60,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -77,7 +91,39 @@
       <option name="project" value="LOCAL" />
       <updated>1708209059357</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="metoda čtení ze souboru">
+      <option name="closed" value="true" />
+      <created>1708209359139</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708209359139</updated>
+    </task>
+    <task id="LOCAL-00004" summary="volání metody loadContentFromFile v Main">
+      <option name="closed" value="true" />
+      <created>1708212133835</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708212133835</updated>
+    </task>
+    <task id="LOCAL-00005" summary="vytvoření metody saveContentToFile">
+      <option name="closed" value="true" />
+      <created>1708215113411</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708215113411</updated>
+    </task>
+    <task id="LOCAL-00006" summary="volání metody saveContentToFile">
+      <option name="closed" value="true" />
+      <created>1708215141229</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708215141229</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -94,6 +140,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ošetření výjimek" />
     <MESSAGE value="metoda čtení ze souboru" />
-    <option name="LAST_COMMIT_MESSAGE" value="metoda čtení ze souboru" />
+    <MESSAGE value="volání metody loadContentFromFile v Main" />
+    <MESSAGE value="vytvoření metody saveContentToFile" />
+    <MESSAGE value="volání metody saveContentToFile" />
+    <option name="LAST_COMMIT_MESSAGE" value="volání metody saveContentToFile" />
   </component>
 </project>

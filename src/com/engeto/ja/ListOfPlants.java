@@ -4,6 +4,7 @@ import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -51,6 +52,8 @@ public class ListOfPlants {
                 Plant plant1 = new Plant(name, description, planted, watering, frequencyOfWatering);
                 plants.add(plant1);
 
+
+
             }
 
 
@@ -79,11 +82,12 @@ public class ListOfPlants {
                 + e.getLocalizedMessage());
     }
 
+        for(Plant plant1 :plants) { System.out.println("Načtený seznam květin:"+plant1.getName() + plant1.getWatering());}
 
-  for(Plant plant1 :plants) { System.out.println(plant1.getName() + plant1.getWatering());}
 
 
-}
+    }
+
 
 
     public void saveContentToFile(String fileName) throws RuntimeException {
@@ -104,5 +108,8 @@ public class ListOfPlants {
                     +":\n"+ e.getLocalizedMessage());
         }
     }
+
+
+
 
 }
