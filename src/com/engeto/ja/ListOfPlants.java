@@ -3,10 +3,7 @@ package com.engeto.ja;
 import java.io.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ListOfPlants {
     private List<Plant> plantList = new ArrayList<>();
@@ -31,12 +28,12 @@ public class ListOfPlants {
         this.plantList = plantList;
     }
 
-    private List<Plant> plants = new ArrayList<>();
+
 
     public void loadContentFromFile(String fileName) throws RuntimeException {
 
         int lineCounter = 0;
-        plants.clear();
+        plantList.clear();
         try (Scanner scanner = new Scanner(new BufferedReader(new FileReader(fileName)))) {
             while (scanner.hasNextLine()) {
                 lineCounter++;
@@ -49,8 +46,8 @@ public class ListOfPlants {
                 LocalDate planted = LocalDate.parse(parts[2]);
                 LocalDate watering = LocalDate.parse(parts[3]);
                 int frequencyOfWatering = Integer.parseInt(parts[4]);
-                Plant plant1 = new Plant(name, description, planted, watering, frequencyOfWatering);
-                plants.add(plant1);
+                Plant plant = new Plant(name, description, planted, watering, frequencyOfWatering);
+                plantList.add(plant);
 
 
 
@@ -82,7 +79,7 @@ public class ListOfPlants {
                 + e.getLocalizedMessage());
     }
 
-        for(Plant plant1 :plants) { System.out.println("Načtený seznam květin:"+plant1.getName() + plant1.getWatering());}
+        for(Plant plant :plantList) { System.out.println("Načtený seznam květin:"+plant.getName() + plant.getWatering());}
 
 
 
@@ -93,12 +90,12 @@ public class ListOfPlants {
     public void saveContentToFile(String fileName) throws RuntimeException {
         String delimiter = "\t";
         try (PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileName)))) {
-            for (Plant plant1 : plants) {
-                writer.println(plant1.getName() + "\t"
-                        + plant1.getNotes() + "\t"
-                        + plant1.getPlanted() + "\t"
-                        + plant1.getWatering() + "\t"
-                        + plant1.getFrequencyOfWatering() + "\t");
+            for (Plant plant : plantList) {
+                writer.println(plant.getName() + "\t"
+                        + plant.getNotes() + "\t"
+                        + plant.getPlanted() + "\t"
+                        + plant.getWatering() + "\t"
+                        + (plant.getFrequencyOfWatering() + "\t"));
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException("Soubor "+fileName+" nebyl nalezen!\n"
@@ -107,6 +104,9 @@ public class ListOfPlants {
             throw new RuntimeException("Chyba výstupu při zápisu do souboru: "+fileName
                     +":\n"+ e.getLocalizedMessage());
         }
+
+
+
     }
 
 
