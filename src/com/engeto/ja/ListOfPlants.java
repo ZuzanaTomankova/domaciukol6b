@@ -79,7 +79,7 @@ public class ListOfPlants {
                 + e.getLocalizedMessage());
     }
 
-        for(Plant plant :plantList) { System.out.println("Načtený seznam květin:"+plant.getName() + plant.getWatering());}
+
 
 
 

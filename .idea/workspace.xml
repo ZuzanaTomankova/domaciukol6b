@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b09f8589-6cf9-4831-aedf-7bbdcea162ce" name="Changes" comment="volání metody saveContentToFile">
-      <change afterPath="$PROJECT_DIR$/resources/kvetiny1" afterDir="false" />
+    <list default="true" id="b09f8589-6cf9-4831-aedf-7bbdcea162ce" name="Changes" comment="úprava třídy PlantException">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/kvetiny.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/kvetiny.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/ja/ListOfPlants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/ja/ListOfPlants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/engeto/ja/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/ja/Plant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +30,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/home/IdeaProjects/kod-z-hodin-2024-01b/l04-git-razeni"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/home/IdeaProjects/kod-z-hodin-2024-01b/l04-git-razeni&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\home\IdeaProjects\domaciukol6\resources" />
@@ -123,7 +118,55 @@
       <option name="project" value="LOCAL" />
       <updated>1708215141229</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="volání metody saveContentToFile">
+      <option name="closed" value="true" />
+      <created>1708217563292</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708217563292</updated>
+    </task>
+    <task id="LOCAL-00008" summary="vymazání Collection.sort">
+      <option name="closed" value="true" />
+      <created>1708250684679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708250684680</updated>
+    </task>
+    <task id="LOCAL-00009" summary="vložení Collection.sort">
+      <option name="closed" value="true" />
+      <created>1708250710254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708250710254</updated>
+    </task>
+    <task id="LOCAL-00010" summary="úprava chybových hlášení">
+      <option name="closed" value="true" />
+      <created>1708250994334</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708250994334</updated>
+    </task>
+    <task id="LOCAL-00011" summary="úprava třídy PlantException">
+      <option name="closed" value="true" />
+      <created>1708251037112</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708251037112</updated>
+    </task>
+    <task id="LOCAL-00012" summary="úprava třídy PlantException">
+      <option name="closed" value="true" />
+      <created>1708335441677</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708335441677</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,6 +186,10 @@
     <MESSAGE value="volání metody loadContentFromFile v Main" />
     <MESSAGE value="vytvoření metody saveContentToFile" />
     <MESSAGE value="volání metody saveContentToFile" />
-    <option name="LAST_COMMIT_MESSAGE" value="volání metody saveContentToFile" />
+    <MESSAGE value="vymazání Collection.sort" />
+    <MESSAGE value="vložení Collection.sort" />
+    <MESSAGE value="úprava chybových hlášení" />
+    <MESSAGE value="úprava třídy PlantException" />
+    <option name="LAST_COMMIT_MESSAGE" value="úprava třídy PlantException" />
   </component>
 </project>

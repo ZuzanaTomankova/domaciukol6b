@@ -24,7 +24,11 @@ public class Main {
         String fileName1 = "resources/kvetiny1.txt";
        listOfPlants.saveContentToFile(fileName1);
 
+
         List<Plant> plantList = listOfPlants.getOtherPlant();
+        for(Plant plant :plantList) { System.out.println("Načtený seznam květin:"+plant.getName() + plant.getWatering());}
+
+
         Collections.sort(plantList,Comparator.comparing(Plant::getName));
         System.out.println(plantList);
 
