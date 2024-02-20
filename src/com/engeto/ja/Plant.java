@@ -95,10 +95,10 @@ public class Plant {
 
         }
 
-        @Override
-        public String toString () {
-            return
-                    "name='" + name + '\'' +
-                            ", watering=" + watering + ", other watering=" + getNextWatering(watering, frequencyOfWatering);
-        }
+    @Override
+    public String toString () {
+        return
+                "name='" + name + '\'' +
+                        ", watering=" + watering + ", other watering=" + getNextWatering(watering, frequencyOfWatering)+"\n";
+    }
     }

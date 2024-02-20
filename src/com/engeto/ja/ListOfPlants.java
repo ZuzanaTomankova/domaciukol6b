@@ -84,9 +84,9 @@ public class ListOfPlants {
 
 
 
-    public void saveContentToFile(String fileName) throws RuntimeException {
+    public void saveContentToFile(String fileName1) throws RuntimeException {
         String delimiter = "\t";
-        try (PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileName)))) {
+        try (PrintWriter writer = new PrintWriter(new BufferedWriter(new FileWriter(fileName1)))) {
             for (Plant plant : plantList) {
                 writer.println(plant.getName() + "\t"
                         + plant.getNotes() + "\t"
@@ -95,10 +95,10 @@ public class ListOfPlants {
                         + (plant.getFrequencyOfWatering() + "\t"));
             }
         } catch (FileNotFoundException e) {
-            throw new RuntimeException("Soubor "+fileName+" nebyl nalezen!\n"
+            throw new RuntimeException("Soubor "+fileName1+" nebyl nalezen!\n"
                     + e.getLocalizedMessage());
         } catch (IOException e) {
-            throw new RuntimeException("Chyba výstupu při zápisu do souboru: "+fileName
+            throw new RuntimeException("Chyba výstupu při zápisu do souboru: "+fileName1
                     +":\n"+ e.getLocalizedMessage());
         }
 

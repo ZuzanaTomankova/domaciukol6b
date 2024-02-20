@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b09f8589-6cf9-4831-aedf-7bbdcea162ce" name="Changes" comment="úprava třídy PlantException">
+    <list default="true" id="b09f8589-6cf9-4831-aedf-7bbdcea162ce" name="Changes" comment="čtení ze souboru plantFile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/kvetiny1" beforeDir="false" afterPath="$PROJECT_DIR$/resources/kvetiny1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/ja/ListOfPlants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/ja/ListOfPlants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/engeto/ja/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/ja/Plant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +34,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/home/IdeaProjects/kod-z-hodin-2024-01b/l04-git-razeni&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/home/IdeaProjects/domaciukol6acopy2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\home\IdeaProjects\domaciukol6\resources" />
@@ -166,7 +170,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708335441677</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="úprava číslování v loadContentFromFile">
+      <option name="closed" value="true" />
+      <created>1708396985215</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1708396985215</updated>
+    </task>
+    <task id="LOCAL-00014" summary="čtení ze souboru plantFile">
+      <option name="closed" value="true" />
+      <created>1708397053125</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1708397053125</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +210,8 @@
     <MESSAGE value="vložení Collection.sort" />
     <MESSAGE value="úprava chybových hlášení" />
     <MESSAGE value="úprava třídy PlantException" />
-    <option name="LAST_COMMIT_MESSAGE" value="úprava třídy PlantException" />
+    <MESSAGE value="úprava číslování v loadContentFromFile" />
+    <MESSAGE value="čtení ze souboru plantFile" />
+    <option name="LAST_COMMIT_MESSAGE" value="čtení ze souboru plantFile" />
   </component>
 </project>
