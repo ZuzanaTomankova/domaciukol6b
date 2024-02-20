@@ -17,7 +17,7 @@ public class Main {
 
         getWateringInfo(listOfPlants);
 
-        String fileName="resources/kvetiny (3).txt";
+        String fileName="plantFile";
         listOfPlants.loadContentFromFile(fileName);
 
         String fileName1 = "resources/kvetiny1.txt";
