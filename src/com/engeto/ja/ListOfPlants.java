@@ -43,9 +43,11 @@ public class ListOfPlants {
                         "Nesprávný počet položek na řádku číslo: " + lineCounter + ": " + line + "!");
                 String name = parts[0];
                 String description = parts[1];
-                LocalDate planted = LocalDate.parse(parts[2]);
-                LocalDate watering = LocalDate.parse(parts[3]);
                 int frequencyOfWatering = Integer.parseInt(parts[4]);
+                LocalDate watering = LocalDate.parse(parts[3]);
+                LocalDate planted = LocalDate.parse(parts[2]);
+
+
                 Plant plant = new Plant(name, description, planted, watering, frequencyOfWatering);
                 plantList.add(plant);
 
@@ -78,10 +80,6 @@ public class ListOfPlants {
         throw new RuntimeException("Chyba při čtení data na řádku číslo: " + lineCounter + ":\n"
                 + e.getLocalizedMessage());
     }
-
-
-
-
 
     }
 
