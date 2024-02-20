@@ -1,0 +1,4 @@
+Fialka 1	Popis fialky - je fialová a hezká	3	2021-01-01	2021-05-12	
+Sukulent v koupelně	Nezalévá se	365	2011-03-01	2011-03-01	
+Fialka fialová	málo se zalévá	7	2024-02-15	2022-01-02	
+Kapradina	hodně se zalévá	1	2024-02-15	2022-01-02	

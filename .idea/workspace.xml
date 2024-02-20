@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b09f8589-6cf9-4831-aedf-7bbdcea162ce" name="Changes" comment="čtení ze souboru plantFile">
+    <list default="true" id="b09f8589-6cf9-4831-aedf-7bbdcea162ce" name="Changes" comment="změna">
+      <change afterPath="$PROJECT_DIR$/resources/kvetiny-spatne-frekvence.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/kvetiny1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/kvetiny1" beforeDir="false" afterPath="$PROJECT_DIR$/resources/kvetiny1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/kvetiny1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/ja/ListOfPlants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/ja/ListOfPlants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/engeto/ja/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/engeto/ja/Plant.java" afterDir="false" />
@@ -46,13 +48,27 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\home\IdeaProjects\domaciukol6acopy2\resources" />
       <recent name="C:\Users\home\IdeaProjects\domaciukol6\resources" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="domaciukol6" />
+      <module name="domaciukol6b" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="domaciukol6b" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="domaciukol6b" />
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -186,7 +202,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708397053125</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="úparava popisu tiskových metod">
+      <option name="closed" value="true" />
+      <created>1708426433593</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1708426433593</updated>
+    </task>
+    <task id="LOCAL-00016" summary="změna">
+      <option name="closed" value="true" />
+      <created>1708426547748</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1708426547748</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +244,8 @@
     <MESSAGE value="úprava třídy PlantException" />
     <MESSAGE value="úprava číslování v loadContentFromFile" />
     <MESSAGE value="čtení ze souboru plantFile" />
-    <option name="LAST_COMMIT_MESSAGE" value="čtení ze souboru plantFile" />
+    <MESSAGE value="úparava popisu tiskových metod" />
+    <MESSAGE value="změna" />
+    <option name="LAST_COMMIT_MESSAGE" value="změna" />
   </component>
 </project>

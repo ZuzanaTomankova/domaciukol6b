@@ -51,9 +51,9 @@ public class ListOfPlants {
                 plantList.add(plant);
 
 
-
             }
-
+            System.out.println("\nSeznam načtený ze souboru:");
+            System.out.println(plantList);
 
     } catch(
     FileNotFoundException e)
@@ -90,9 +90,9 @@ public class ListOfPlants {
             for (Plant plant : plantList) {
                 writer.println(plant.getName() + "\t"
                         + plant.getNotes() + "\t"
-                        + plant.getPlanted() + "\t"
+                        +plant.getFrequencyOfWatering() + "\t"
                         + plant.getWatering() + "\t"
-                        + (plant.getFrequencyOfWatering() + "\t"));
+                        + ( plant.getPlanted() + "\t"));
             }
         } catch (FileNotFoundException e) {
             throw new RuntimeException("Soubor "+fileName1+" nebyl nalezen!\n"

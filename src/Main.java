@@ -14,21 +14,19 @@ public class Main {
 
         ListOfPlants listOfPlants = new ListOfPlants();
 
-        getWateringInfo(listOfPlants);
+
 
         String fileName="resources/kvetiny (3).txt";
         listOfPlants.loadContentFromFile(fileName);
 
 
+
         listOfPlants.addPlant(new Plant("Fialka fialová","málo se zalévá",LocalDate.of(2022,1,2),LocalDate.of(2024,2,15),7));
         listOfPlants.addPlant(new Plant("Kapradina","hodně se zalévá",LocalDate.of(2022,1,2),LocalDate.of(2024,2,15),1));
+
         listOfPlants.removePlant(1);
 
-
-
-
-
-        String fileName1 = "resources/kvetiny1";
+        String fileName1 = "resources/kvetiny1.txt";
        listOfPlants.saveContentToFile(fileName1);
 
 
@@ -41,7 +39,7 @@ public class Main {
         Collections.sort(plantList,Comparator.comparing(Plant::getName));
         System.out.println(plantList);
 
-        System.out.println("Seznam setříděný podle poslední zálivky");
+        System.out.println("Seznam setříděný podle poslední zálivky:");
         Collections.sort(plantList,Comparator.comparing(Plant::getWatering));
 
         System.out.println(plantList);
@@ -49,7 +47,5 @@ public class Main {
 
     }
 
-    private static void getWateringInfo(ListOfPlants listOfPlants) {
-        System.out.println(listOfPlants.getOtherPlant());
+
     }
-}

@@ -89,7 +89,7 @@ public class Plant {
 
 
 
-        public LocalDate getNextWatering(LocalDate watering,int frequencyOfWatering){
+        public LocalDate getWateringInfo(LocalDate watering,int frequencyOfWatering){
             LocalDate wateringDate = ChronoUnit.DAYS.addTo(watering, frequencyOfWatering);
             {return wateringDate;}
 
@@ -99,6 +99,6 @@ public class Plant {
     public String toString () {
         return
                 "name='" + name + '\'' +
-                        ", watering=" + watering + ", other watering=" + getNextWatering(watering, frequencyOfWatering)+"\n";
+                        ", watering=" + watering + ", other watering=" + getWateringInfo(watering, frequencyOfWatering)+"\n";
     }
     }
