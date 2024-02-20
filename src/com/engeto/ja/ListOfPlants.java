@@ -31,7 +31,6 @@ public class ListOfPlants {
 
 
     public void loadContentFromFile(String fileName) throws RuntimeException {
-
         int lineCounter = 0;
         plantList.clear();
         try (Scanner scanner = new Scanner(new BufferedReader(new FileReader(fileName)))) {
