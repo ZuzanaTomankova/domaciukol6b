@@ -19,7 +19,6 @@ public class Main {
 
         String fileName="resources/kvetiny (3).txt";
         listOfPlants.loadContentFromFile(fileName);
-změna
 
         String fileName1 = "resources/kvetiny1.txt";
        listOfPlants.saveContentToFile(fileName1);
